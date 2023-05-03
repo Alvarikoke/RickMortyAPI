@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EpisodiosModule } from './episodios/episodios.module';
 import { LocalizacionesModule } from './localizaciones/localizaciones.module';
 import { PersonajesModule } from './personajes/personajes.module';
+import { EpisodiosPageComponent } from './episodios/pages/episodios-page/episodios-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PersonajesModule } from './personajes/personajes.module';
     EpisodiosModule,
     LocalizacionesModule,
     PersonajesModule,
-    HttpClientModule
+    HttpClientModule,
+    EpisodiosPageComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

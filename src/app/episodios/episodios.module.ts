@@ -11,10 +11,12 @@ import { EpisodiosPageComponent } from './pages/episodios-page/episodios-page.co
     EpisodiosPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    EpisodiosPageComponent,
+    TablaComponent
   ],
   exports: [
-    TablaComponent
+    EpisodiosPageComponent
   ]
 })
 export class EpisodiosModule { }
