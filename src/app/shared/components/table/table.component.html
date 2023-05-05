@@ -1,17 +1,17 @@
-<div *ngFor="let item of data">
-
-    <div *ngIf="typeData === 'episodes'">
-        <h2>{{ item.name }}</h2>
-        <p>Air date: {{ item.air_date }}</p>
-        <p>Episode code: {{ item.episode }}</p>
-    </div>
-        
-
-    <div *ngIf="typeData === 'characters'">
-        <h2>{{ item.name }}</h2>
-        <p>Age: {{ item.air_date }}</p>
-        <p>Episode code: {{ item.episode }}</p>
-    </div>
-
-
-</div>
+<table class="table table-hover" >
+    <thead>
+      <tr *ngIf="typeData === 'episodes'">
+        <th scope="col">Episode Name</th>
+        <th scope="col">Air Date</th>
+        <th scope="col">Episode Code</th>
+        <th scope="col">View Details</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of data">
+      <tr *ngIf="typeData === 'episodes'">
+        <td>{{ item.name }}</td>
+        <td>{{ item.air_date }}</td>
+        <td>{{ item.episode }}</td>
+      </tr>
+    </tbody>
+</table>
