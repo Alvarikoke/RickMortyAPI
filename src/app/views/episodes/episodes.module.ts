@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { EpisodesListComponent } from './episodes-list/episodes-list.component';
 import { TablaComponent } from 'src/app/shared/components/table/table.component';
+import { EpisodeDetailsComponent } from './episode-details/episode-details.component';
 
 
 
 @NgModule({
   declarations: [
     TablaComponent,
-    EpisodesListComponent
+    EpisodesListComponent,
+    EpisodeDetailsComponent
   ],
   imports: [
     CommonModule,

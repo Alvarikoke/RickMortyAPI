@@ -7,11 +7,24 @@ import { Episode } from '../interfaces/episode.interface';
 })
 export class EpisodesService {
 
-  private baseURL = 'https://rickandmortyapi.com/api'
+  private baseURL = 'https://rickandmortyapi.com/api';
+  protected episodeNumber = '';
 
   constructor(private http: HttpClient) { }
 
   getEpisodes() {
     return this.http.get<Episode>(`${this.baseURL}/episode`);
+  }
+
+  getSingleEpisode() {
+    return this.http.get<Episode>(`${this.baseURL}/episode/${this.episodeNumber}`)
+  }
+
+  getCharacters() {
+    return this.http.get<Episode>(`${this.baseURL}/character`);
+  }
+
+  getLocations() {
+    return this.http.get<Episode>(`${this.baseURL}/location`);
   }
 }
