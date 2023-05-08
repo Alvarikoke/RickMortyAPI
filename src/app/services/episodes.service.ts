@@ -17,7 +17,8 @@ export class EpisodesService {
   }
 
   getSingleEpisode() {
-    return this.http.get<Episode>(`${this.baseURL}/episode/${this.episodeNumber}`)
+    // return this.http.get<Episode>(`${this.baseURL}/episode/${this.episodeNumber}`);
+    return this.http.get<Episode>(`${this.baseURL}/episode/1`)
   }
 
   getCharacters() {

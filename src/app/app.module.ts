@@ -10,8 +10,7 @@ import { ListComponent } from './shared/components/list/list.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

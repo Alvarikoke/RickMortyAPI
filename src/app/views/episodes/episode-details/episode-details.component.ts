@@ -15,7 +15,7 @@ export class EpisodeDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     
-    this.episodesService.getEpisodes().subscribe((response: any) => {
+    this.episodesService.getSingleEpisode().subscribe((response: any) => {
       console.log('response :>> ', response);
       this.episodes = response.results;
     });
