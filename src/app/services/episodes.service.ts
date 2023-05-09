@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http' 
+import { HttpClient } from '@angular/common/http';
 import { Episode } from '../interfaces/episode.interface';
 
 @Injectable({
@@ -21,11 +21,4 @@ export class EpisodesService {
     return this.http.get<Episode>(`${this.baseURL}/episode/1`)
   }
 
-  getCharacters() {
-    return this.http.get<Episode>(`${this.baseURL}/character`);
-  }
-
-  getLocations() {
-    return this.http.get<Episode>(`${this.baseURL}/location`);
-  }
 }

@@ -9,15 +9,22 @@ import { EpisodesService } from 'src/app/services/episodes.service';
 })
 export class EpisodeDetailsComponent implements OnInit {
 
-  episodes: Episode[] = [];
+  episode: Episode = {
+    name: '',
+    air_date: '',
+    episode: '',
+    characters: [],
+    url: '',
+    created: ''
+  };
 
   constructor(private episodesService: EpisodesService) { }
 
   ngOnInit(): void {
     
     this.episodesService.getSingleEpisode().subscribe((response: any) => {
-      console.log('response :>> ', response);
-      this.episodes = response.results;
+      this.episode = {... response}; // Spread operator (es fundamental), iguala pero coge otra posicion de memoria (obj y arr)
+      console.log('this.episode :>> ', this.episode);
     });
   }
 

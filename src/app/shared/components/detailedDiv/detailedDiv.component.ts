@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  selector: 'app-detailedDiv',
+  templateUrl: './detailedDiv.component.html',
+  styleUrls: ['./detailedDiv.component.css']
 })
-export class ListComponent implements OnInit {
+export class DeailedDivComponent implements OnInit {
 
   @Input() data: any[] = [];
   @Input() typeData!: string;
