@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-table',
   templateUrl: './table.component.html'
 })
-export class TablaComponent implements OnInit {
+export class TableComponent implements OnInit {
 
   @Input() data: any[] = [];
   @Input() typeData!: string;

@@ -5,7 +5,7 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './detailedDiv.component.html',
   styleUrls: ['./detailedDiv.component.css']
 })
-export class DeailedDivComponent implements OnInit {
+export class DetailedDivComponent implements OnInit {
 
   @Input() data: any[] = [];
   @Input() typeData!: string;

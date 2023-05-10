@@ -6,12 +6,24 @@
         <th scope="col">Episode Code</th>
         <th scope="col">View Details</th>
       </tr>
+      <tr *ngIf="typeData === 'characters'">
+        <th scope="col">Character Name</th>
+        <th scope="col">Species</th>
+        <th scope="col">Gender</th>
+        <th scope="col">View Details</th>
+      </tr>
     </thead>
     <tbody *ngFor="let item of data">
       <tr *ngIf="typeData === 'episodes'">
         <td>{{ item.name }}</td>
         <td>{{ item.air_date }}</td>
         <td>{{ item.episode }}</td>
+      </tr>
+      <tr *ngIf="typeData === 'characters'">
+        <td>{{ item.name }}</td>
+        <td>{{ item.species }}</td>
+        <td>{{ item.gender }}</td>
+
       </tr>
     </tbody>
 </table>
