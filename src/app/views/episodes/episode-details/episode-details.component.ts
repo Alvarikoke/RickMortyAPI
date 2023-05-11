@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TypeData } from 'src/app/interfaces/commons.interface';
 import { Episode } from 'src/app/interfaces/episode.interface';
 import { EpisodesService } from 'src/app/services/episodes.service';
 
@@ -9,14 +10,8 @@ import { EpisodesService } from 'src/app/services/episodes.service';
 })
 export class EpisodeDetailsComponent implements OnInit {
 
-  episode: Episode = {
-    name: '',
-    air_date: '',
-    episode: '',
-    characters: [],
-    url: '',
-    created: ''
-  };
+  episode!: Episode;
+  type: TypeData = TypeData.Episode;
 
   constructor(private episodesService: EpisodesService) { }
 

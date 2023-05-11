@@ -12,6 +12,12 @@
         <th scope="col">Gender</th>
         <th scope="col">View Details</th>
       </tr>
+      <tr *ngIf="typeData === 'locations'">
+        <th scope="col">Location Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Dimesion</th>
+        <th scope="col">View Details</th>
+      </tr>
     </thead>
     <tbody *ngFor="let item of data">
       <tr *ngIf="typeData === 'episodes'">
@@ -23,7 +29,11 @@
         <td>{{ item.name }}</td>
         <td>{{ item.species }}</td>
         <td>{{ item.gender }}</td>
-
+      </tr>
+      <tr *ngIf="typeData === 'locations'">
+        <td>{{ item.name }}</td>
+        <td>{{ item.type }}</td>
+        <td>{{ item.dimension }}</td>
       </tr>
     </tbody>
 </table>

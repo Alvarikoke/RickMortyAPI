@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableComponent } from './table/table.component';
-import { DetailedDivComponent } from './detailedDiv/detailedDiv.component';
+import { DetailsComponent } from './details/details.component';
 
 
 
 @NgModule({
   declarations: [
     TableComponent,
-    DetailedDivComponent
+    DetailsComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     TableComponent,
-    DetailedDivComponent
+    DetailsComponent
   ]
 })
 export class SharedComponentsModule { }

@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { EpisodesModule } from './views/episodes/episodes.module';
 import { CharactersModule } from './views/characters/characters.module';
+import { LocationsModule } from './views/locations/locations.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CharactersModule } from './views/characters/characters.module';
     AppRoutingModule,
     EpisodesModule,
     CharactersModule,
+    LocationsModule,
     HttpClientModule,
   ],
   providers: [],

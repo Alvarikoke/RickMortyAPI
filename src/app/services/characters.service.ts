@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Character } from '../interfaces/episode.interface';
+import { Character } from '../interfaces/character.interface';
 
 
 @Injectable({
