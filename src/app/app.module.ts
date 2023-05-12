@@ -20,6 +20,7 @@ import { LocationsModule } from './views/locations/locations.module';
     CharactersModule,
     LocationsModule,
     HttpClientModule,
+    // RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

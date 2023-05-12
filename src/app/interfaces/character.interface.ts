@@ -7,20 +7,15 @@ export interface Character {
     species: string;
     type: string;	
     gender: string;
-    origin: Origin;
-    location: LocationCharacter;	
+    origin: LocationDescription;
+    location: LocationDescription;	
     image: string;
     episode: Episode[];
     url: string;
     created: string;
 }
 
-export interface Origin {
-    name: string;
-    url: string;
-}
-
-export interface LocationCharacter {
+export interface LocationDescription {
     name: string;
     url: string;
 }
