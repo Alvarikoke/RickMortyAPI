@@ -1,6 +1,20 @@
-<p>Name: {{character.name}}</p>
-<!-- <p>Chara type: {{character.type}}</p>
-<p>Dimension: {{character.dimension}}</p>
-<p>Residents number: {{character.residents.length}}</p>
+<app-details [data]="character" [typeData]="type"></app-details>
+
+<!-- <p>Name: {{character.name}}</p>
+<p>Status: {{character.status}}</p>
+<p>Species: {{character.species}}</p>
+<p *ngIf="character.type != ''">Type: {{character.type}}</p>
+<p>Chara gender: {{character.gender}}</p>
+<p>Character origin:</p>
+    <ul>
+        <li>Place: {{character.origin.name}}</li>
+        <li>URL: {{character.origin.url}}</li>
+    </ul>
+<p>Character location:</p>
+    <ul>
+        <li>Place: {{character.location.name}}</li>
+        <li>URL: {{character.location.url}}</li>
+    </ul>
+<p>Image: <img src="{{character.image}}" alt=""></p>
 <p>URL: {{character.url}}</p>
 <p>Created: {{character.created}}</p> -->

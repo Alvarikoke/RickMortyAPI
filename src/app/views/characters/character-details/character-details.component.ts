@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TypeData } from 'src/app/interfaces/commons.interface';
 import { Character } from 'src/app/interfaces/character.interface';
 import { CharactersService } from 'src/app/services/characters.service';
-import { Location } from '../../../interfaces/location.interface';
 
 @Component({
   selector: 'app-character-details',
@@ -11,6 +11,7 @@ import { Location } from '../../../interfaces/location.interface';
 export class CharacterDetailsComponent implements OnInit {
 
   character!: Character;
+  type: TypeData = TypeData.Character;
 
   constructor(private charactersService: CharactersService) { }
 

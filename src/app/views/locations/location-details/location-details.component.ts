@@ -10,7 +10,6 @@ import { LocationsService } from 'src/app/services/locations.service';
 })
 export class LocationDetailsComponent implements OnInit {
 
-  
   location!: Location;
   type: TypeData = TypeData.Location;
 

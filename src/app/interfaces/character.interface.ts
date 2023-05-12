@@ -1,5 +1,4 @@
 import { Episode } from "./episode.interface";
-import { Location as loc } from "./location.interface";
 
 export interface Character {
     id: number;
@@ -8,10 +7,20 @@ export interface Character {
     species: string;
     type: string;	
     gender: string;
-    origin?: loc;
-    location?: loc;	
+    origin: Origin;
+    location: LocationCharacter;	
     image: string;
     episode: Episode[];
     url: string;
     created: string;
+}
+
+export interface Origin {
+    name: string;
+    url: string;
+}
+
+export interface LocationCharacter {
+    name: string;
+    url: string;
 }
